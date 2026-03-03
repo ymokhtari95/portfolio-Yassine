@@ -3,93 +3,137 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projet GNS3 – Mokhtari Yassine</title>
+    <title>Projet GNS3 — Mokhtari Yassine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="../style.css" />
+    <style>
+      .project-images {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        max-width: 860px;
+      }
+      .project-images img {
+        width: 100%;
+        border-radius: 8px;
+        border: 1px solid var(--border);
+        display: block;
+      }
+      .content-section {
+        max-width: 1100px;
+        margin: 48px auto;
+        padding: 0 24px;
+      }
+      .content-section h2 {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: var(--text);
+        margin-bottom: 16px;
+        letter-spacing: -0.01em;
+      }
+      .content-section p {
+        color: var(--muted);
+        font-size: 0.975rem;
+        line-height: 1.75;
+      }
+      .tech-list {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 0;
+        margin-top: 8px;
+      }
+      .tech-list li {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.78rem;
+        padding: 4px 10px;
+        background: rgba(88, 166, 255, 0.08);
+        border: 1px solid rgba(88, 166, 255, 0.25);
+        border-radius: 4px;
+        color: var(--accent);
+      }
+      .back-link {
+        max-width: 1100px;
+        margin: 48px auto 80px;
+        padding: 0 24px;
+      }
+    </style>
   </head>
   <body>
     <header>
       <nav>
-        <h1>Projet GNS3</h1>
-        <ul>
-          <li><a href="../index.html">← Retour au portfolio</a></li>
+        <span class="nav-brand"><span class="accent">~/</span>projet-gns3</span>
+        <ul class="nav-links">
+          <li><a href="../index.html"><i class="fas fa-arrow-left"></i> Retour au portfolio</a></li>
         </ul>
       </nav>
     </header>
 
     <section id="hero">
-      <h2>Architecture Réseau Complète sur GNS3</h2>
-      <p>Topologie d’entreprise : VLAN, DMZ, routage, firewall</p>
+      <div class="hero-bg-grid"></div>
+      <div class="hero-content">
+        <div class="hero-prefix">Projet réseau</div>
+        <h2>Architecture Réseau<br />Complète sur GNS3</h2>
+        <p class="hero-subtitle">Topologie d'entreprise : VLAN, DMZ, routage, firewall</p>
+      </div>
     </section>
 
-    <section>
+    <div class="content-section">
       <h2>Présentation du projet</h2>
       <p>
-        Création d’une architecture réseau complète simulée sur GNS3, visant à
-        comprendre les bases d’un réseau d’entreprise structuré.
+        Création d'une architecture réseau complète simulée sur GNS3, visant à
+        comprendre les bases d'un réseau d'entreprise structuré et sécurisé.
       </p>
-    </section>
+    </div>
 
-    <section>
+    <div class="content-section">
       <h2>Objectifs techniques</h2>
-      <ul>
+      <ul class="tech-list">
         <li>Topologie réseau cohérente</li>
-        <li>Mise en place d’une DMZ</li>
-        <li>Configuration de VLAN</li>
+        <li>DMZ</li>
+        <li>VLAN</li>
         <li>Routage interne</li>
-        <li>Gestion d’un firewall</li>
+        <li>Firewall</li>
       </ul>
-    </section>
+    </div>
 
-      <h2>Captures de quelques diapo du projets</h2>
-      <img
-        src="../images/gns3/capture 1.png"
-        style="max-width: 800px; width: 100%; margin-bottom: 20px"
-      />
-      <img
-        src="../images/gns3/topologie.png"
-        style="max-width: 800px; width: 100%; border-radius: 8px"
-      />
-      <img
-        src="../images/gns3/capture 2.png"
-        style="max-width: 800px; width: 100%; margin-bottom: 20px"
-      />
-      <img
-        src="../images/gns3/capture 3.png"
-        style="max-width: 800px; width: 100%; margin-bottom: 20px"
-      />
-      <img
-        src="../images/gns3/capture 4.png"
-        style="max-width: 800px; width: 100%; margin-bottom: 20px"
-      />
-      <img
-        src="../images/gns3/capture2.png"
-        style="max-width: 800px; width: 100%"
-      />
-    </section>
+    <div class="content-section">
+      <h2>Captures du projet</h2>
+      <div class="project-images">
+        <img src="../images/gns3/capture 1.png" alt="Capture 1" />
+        <img src="../images/gns3/topologie.png" alt="Topologie réseau" />
+        <img src="../images/gns3/capture 2.png" alt="Capture 2" />
+        <img src="../images/gns3/capture 3.png" alt="Capture 3" />
+        <img src="../images/gns3/capture 4.png" alt="Capture 4" />
+        <img src="../images/gns3/capture2.png" alt="Capture réseau" />
+      </div>
+    </div>
 
-    <section>
+    <div class="content-section">
       <h2>Compétences acquises</h2>
-      <ul>
+      <ul class="tech-list">
         <li>Compréhension du routage</li>
         <li>Segmentation réseau</li>
-        <li>Mise en place d’une zone DMZ</li>
+        <li>Zone DMZ</li>
         <li>Analyse de flux réseau</li>
       </ul>
-    </section>
+    </div>
 
-    <section id="contact">
-      <a href="../index.html" class="btn primary">Retour</a>
-    </section>
+    <div class="back-link">
+      <a href="../index.html" class="btn primary">
+        <i class="fas fa-arrow-left"></i> Retour au portfolio
+      </a>
+    </div>
+
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-

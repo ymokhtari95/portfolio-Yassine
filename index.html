@@ -3,162 +3,249 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mokhtari Yassine - Portfolio Cybersécurité</title>
+    <title>Mokhtari Yassine — Portfolio Cybersécurité</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+
     <!-- HEADER / NAV -->
     <header>
       <nav>
-        <h1>Mokhtari Yassine</h1>
-        <ul>
+        <span class="nav-brand"><span class="accent">~/</span>mokhtari-yassine</span>
+        <ul class="nav-links">
           <li><a href="#hero">Accueil</a></li>
           <li><a href="#about">À propos</a></li>
           <li><a href="#skills">Compétences</a></li>
           <li><a href="#projects">Projets</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <div class="nav-social">
+          <a href="#" title="GitHub — à renseigner" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="#" title="LinkedIn — à renseigner" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
       </nav>
     </header>
 
     <!-- HERO -->
     <section id="hero">
-      <h2>Étudiant en Cybersécurité</h2>
-      <p>À Guardia CyberSecurity School</p>
-      <p>
-        Passionné par l’informatique, les réseaux et la sécurité des systèmes.
-      </p>
-      <div class="hero-buttons">
-        <a href="#projects" class="btn primary">Voir mes projets</a>
-        <a
-          href="projects/Noir et Blanc Couleur Blocs Logiciel Ingénieure CV.pdf"
-          class="btn secondary"
-          >Télécharger mon CV</a
-        >
+      <div class="hero-bg-grid"></div>
+      <div class="hero-content">
+        <div class="hero-prefix">Guardia CyberSecurity School</div>
+        <h2>Mokhtari Yassine</h2>
+        <p class="hero-subtitle"><span id="typewriter"></span></p>
+        <p class="hero-desc">
+          Passionné par l'informatique, les réseaux et la sécurité des systèmes.
+          En route vers l'architecture en cybersécurité.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn primary">
+            <i class="fas fa-folder-open"></i> Voir mes projets
+          </a>
+          <a
+            href="projects/Noir et Blanc Couleur Blocs Logiciel Ingénieure CV.pdf"
+            class="btn secondary"
+            download
+          >
+            <i class="fas fa-download"></i> Télécharger mon CV
+          </a>
+        </div>
       </div>
     </section>
 
     <!-- À PROPOS -->
     <section id="about">
+      <p class="section-label">// à propos</p>
       <h2>À propos de moi</h2>
-      <p>
-        Je m’appelle <strong>Mokhtari Yassine</strong> et je suis étudiant 
-        à <strong>Guardia Cyber Security School</strong>. J’ai choisi la 
-        cybersécurité car c’est un domaine à la fois d’avenir et au
-        cœur de l’actualité. L’informatique me passionne, et la sécurité
-        m’attire particulièrement pour son côté technique, stratégique et
-        évolutif.
-      </p>
-      <br />
-      <p>
-        Je m’intéresse particulièrement au
-        <strong>métier d’architecte en cybersécurité</strong>, même si mes
-        préférences évolueront selon les matières et les projets que je
-        découvrirai.
-      </p>
-      <br />
-      <p>
-        Mon objectif est de construire une base solide en réseaux, systèmes et
-        sécurité afin d’évoluer vers un rôle technique ou stratégique dans le
-        domaine.
-      </p>
+      <div class="about-card fade-in">
+        <p>
+          Je m'appelle <strong>Mokhtari Yassine</strong> et je suis étudiant
+          à <strong>Guardia Cyber Security School</strong>. J'ai choisi la
+          cybersécurité car c'est un domaine à la fois d'avenir et au cœur
+          de l'actualité. L'informatique me passionne, et la sécurité m'attire
+          particulièrement pour son côté technique, stratégique et évolutif.
+        </p>
+        <p>
+          Je m'intéresse particulièrement au
+          <strong>métier d'architecte en cybersécurité</strong>, même si mes
+          préférences évolueront selon les matières et les projets que je
+          découvrirai.
+        </p>
+        <p>
+          Mon objectif est de construire une base solide en réseaux, systèmes et
+          sécurité afin d'évoluer vers un rôle technique ou stratégique dans le
+          domaine.
+        </p>
+      </div>
     </section>
 
     <!-- COMPÉTENCES -->
     <section id="skills">
+      <p class="section-label">// compétences</p>
       <h2>Compétences</h2>
+      <div class="skills-grid">
 
-      <div class="skills-container">
-        <div class="skill-block">
-          <h3>Réseaux</h3>
-          <ul>
-            <li>
-              Construction et configuration de réseaux sur <strong>GNS3</strong>
-            </li>
-            <li>Segmentation réseau : VLAN, DMZ</li>
-            <li>Configuration de routeurs, switches et firewalls</li>
-            <li>NAT, filtrage, proxies et routage</li>
-          </ul>
+        <div class="skill-block fade-in">
+          <div class="skill-block-header">
+            <i class="fas fa-network-wired"></i>
+            <h3>Réseaux</h3>
+          </div>
+          <div class="badges-list">
+            <span class="skill-badge">GNS3</span>
+            <span class="skill-badge">VLAN</span>
+            <span class="skill-badge">DMZ</span>
+            <span class="skill-badge">Routage</span>
+            <span class="skill-badge">Firewall</span>
+            <span class="skill-badge">NAT</span>
+            <span class="skill-badge">Proxy</span>
+            <span class="skill-badge">Switch</span>
+          </div>
         </div>
 
-        <div class="skill-block">
-          <h3>Systèmes & Virtualisation</h3>
-          <ul>
-            <li>Création et gestion de VMs sur <strong>VMware</strong></li>
-            <li>Tests entre différentes machines virtuelles</li>
-            <li>Notions d'administration système</li>
-          </ul>
+        <div class="skill-block fade-in">
+          <div class="skill-block-header">
+            <i class="fas fa-server"></i>
+            <h3>Systèmes &amp; Virtualisation</h3>
+          </div>
+          <div class="badges-list">
+            <span class="skill-badge">VMware</span>
+            <span class="skill-badge">VMs</span>
+            <span class="skill-badge">Administration</span>
+            <span class="skill-badge">Tests réseau</span>
+          </div>
         </div>
 
-        <div class="skill-block">
-          <h3>Cybersécurité (débutant)</h3>
-          <ul>
-            <li>Architecture périmétrique simple</li>
-            <li>Segmentation réseau sécurisée</li>
-            <li>Bonnes pratiques (accès, mots de passe…)</li>
-          </ul>
+        <div class="skill-block fade-in">
+          <div class="skill-block-header">
+            <i class="fas fa-shield-halved"></i>
+            <h3>Cybersécurité</h3>
+          </div>
+          <div class="badges-list">
+            <span class="skill-badge green">Archi périmétrique</span>
+            <span class="skill-badge green">Segmentation</span>
+            <span class="skill-badge green">Bonnes pratiques</span>
+            <span class="skill-badge green">Contrôle d'accès</span>
+          </div>
         </div>
 
-        <div class="skill-block">
-          <h3>Développement Web</h3>
-          <ul>
-            <li>HTML (bases solides)</li>
-            <li>CSS (mise en page fonctionnelle)</li>
-            <li>JavaScript (bases en cours d’acquisition)</li>
-          </ul>
+        <div class="skill-block fade-in">
+          <div class="skill-block-header">
+            <i class="fas fa-code"></i>
+            <h3>Développement Web</h3>
+          </div>
+          <div class="badges-list">
+            <span class="skill-badge">HTML</span>
+            <span class="skill-badge">CSS</span>
+            <span class="skill-badge">JavaScript</span>
+          </div>
         </div>
 
-        <div class="skill-block">
-          <h3>Soft skills</h3>
-          <ul>
-            <li>Curiosité et motivation</li>
-            <li>Rigueur et organisation</li>
-            <li>Esprit logique</li>
-            <li>Autonomie</li>
-          </ul>
+        <div class="skill-block fade-in">
+          <div class="skill-block-header">
+            <i class="fas fa-brain"></i>
+            <h3>Soft Skills</h3>
+          </div>
+          <div class="badges-list">
+            <span class="skill-badge green">Curiosité</span>
+            <span class="skill-badge green">Rigueur</span>
+            <span class="skill-badge green">Esprit logique</span>
+            <span class="skill-badge green">Autonomie</span>
+          </div>
         </div>
+
       </div>
     </section>
 
+    <!-- PROJETS -->
     <section id="projects">
+      <p class="section-label">// projets</p>
       <h2>Projets</h2>
-
       <div class="projects-container">
-        <article class="project-card">
-          <h3>Réseau complet sur GNS3</h3>
-          <p>Création d’une architecture réseau professionnelle simulée.</p>
-          <a href="projects/gns3.html" class="btn secondary">Voir le projet</a>
+
+        <article class="project-card fade-in">
+          <div class="project-card-top"></div>
+          <div class="project-card-body">
+            <h3>Réseau complet sur GNS3</h3>
+            <p>
+              Création d'une architecture réseau d'entreprise simulée :
+              VLAN, DMZ, routage interne et gestion de firewall.
+            </p>
+            <div class="project-tags">
+              <span class="tag">GNS3</span>
+              <span class="tag">VLAN</span>
+              <span class="tag">DMZ</span>
+              <span class="tag">Firewall</span>
+              <span class="tag">Routage</span>
+            </div>
+            <a href="projects/gns3.html" class="btn secondary">
+              <i class="fas fa-arrow-right"></i> Voir le projet
+            </a>
+          </div>
         </article>
 
-        <article class="project-card">
-          <h3>Mini-labo VMware avec firewall</h3>
-          <p>Réseau virtuel isolé avec filtrage et tests de connectivité.</p>
-          <a href="projects/vmware.html" class="btn secondary"
-            >Voir le projet</a
-          >
+        <article class="project-card fade-in">
+          <div class="project-card-top"></div>
+          <div class="project-card-body">
+            <h3>Mini-labo VMware avec firewall</h3>
+            <p>
+              Réseau virtuel isolé avec plusieurs VMs, filtrage par firewall
+              et tests de connectivité inter-machines.
+            </p>
+            <div class="project-tags">
+              <span class="tag">VMware</span>
+              <span class="tag">Firewall</span>
+              <span class="tag">Réseau isolé</span>
+              <span class="tag">Ping / Ports</span>
+            </div>
+            <a href="projects/vmware.html" class="btn secondary">
+              <i class="fas fa-arrow-right"></i> Voir le projet
+            </a>
+          </div>
         </article>
+
       </div>
     </section>
 
     <!-- CONTACT -->
     <section id="contact">
-      <h2>Contact</h2>
-      <p>
-        Email :
-        <a href="mailto:ymokhtari@guardiaschool.fr"
-          >ymokhtari@guardiaschool.fr</a
-        >
-      </p>
+      <p class="section-label">// contact</p>
+      <h2>Me contacter</h2>
+      <div class="contact-card fade-in">
+        <p>
+          Disponible pour toute opportunité, collaboration ou simplement pour
+          échanger sur la cybersécurité et les réseaux.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:ymokhtari@guardiaschool.fr" class="contact-link email">
+            <i class="fas fa-envelope"></i> ymokhtari@guardiaschool.fr
+          </a>
+          <a href="#" class="contact-link" title="Lien GitHub à renseigner">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="#" class="contact-link" title="Lien LinkedIn à renseigner">
+            <i class="fab fa-linkedin-in"></i> LinkedIn
+          </a>
+        </div>
+      </div>
     </section>
+
+    <footer>
+      <span>~/mokhtari-yassine</span> — Portfolio Cybersécurité · 2025
+    </footer>
 
     <script src="script.js"></script>
   </body>
 </html>
-
-
-
-
-
-
-
-

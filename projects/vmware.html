@@ -1,69 +1,128 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projet VMware – Mokhtari Yassine</title>
+    <title>Projet VMware — Mokhtari Yassine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="../style.css" />
+    <style>
+      .content-section {
+        max-width: 1100px;
+        margin: 48px auto;
+        padding: 0 24px;
+      }
+      .content-section h2 {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: var(--text);
+        margin-bottom: 16px;
+        letter-spacing: -0.01em;
+      }
+      .content-section p {
+        color: var(--muted);
+        font-size: 0.975rem;
+        line-height: 1.75;
+        margin-bottom: 16px;
+      }
+      .tech-list {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 0;
+        margin-top: 8px;
+      }
+      .tech-list li {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.78rem;
+        padding: 4px 10px;
+        background: rgba(88, 166, 255, 0.08);
+        border: 1px solid rgba(88, 166, 255, 0.25);
+        border-radius: 4px;
+        color: var(--accent);
+      }
+      .back-link {
+        max-width: 1100px;
+        margin: 48px auto 80px;
+        padding: 0 24px;
+      }
+    </style>
   </head>
   <body>
     <header>
       <nav>
-        <h1>Projet VMware</h1>
-        <ul>
-          <li><a href="../index.html">← Retour au portfolio</a></li>
+        <span class="nav-brand"><span class="accent">~/</span>projet-vmware</span>
+        <ul class="nav-links">
+          <li><a href="../index.html"><i class="fas fa-arrow-left"></i> Retour au portfolio</a></li>
         </ul>
       </nav>
     </header>
 
     <section id="hero">
-      <h2>Mini-labo VMware avec firewall</h2>
-      <p>Réseau virtuel isolé + filtrage + tests de communication</p>
+      <div class="hero-bg-grid"></div>
+      <div class="hero-content">
+        <div class="hero-prefix">Projet virtualisation</div>
+        <h2>Mini-labo VMware<br />avec Firewall</h2>
+        <p class="hero-subtitle">Réseau virtuel isolé + filtrage + tests de communication</p>
+      </div>
     </section>
 
-    <section>
+    <div class="content-section">
       <h2>Description</h2>
       <p>
-        Création d’un réseau isolé contenant deux machines virtuelles reliées à
+        Création d'un réseau isolé contenant deux machines virtuelles reliées à
         un firewall. Objectif : tester des règles de filtrage et observer les
-        communications.
+        communications entre machines.
       </p>
-    </section>
+    </div>
 
-    <section>
+    <div class="content-section">
       <h2>Objectifs techniques</h2>
-      <ul>
-        <li>Gestion de plusieurs VMs</li>
-        <li>Création d’un réseau interne isolé</li>
-        <li>Filtrage simple via firewall</li>
-        <li>Tests de connectivité (ping, ports…)</li>
+      <ul class="tech-list">
+        <li>Gestion de VMs</li>
+        <li>Réseau interne isolé</li>
+        <li>Filtrage via firewall</li>
+        <li>Tests de connectivité</li>
+        <li>Ping / Ports</li>
       </ul>
-    </section>
+    </div>
 
-    <section>
+    <div class="content-section">
       <h2>Rapport du projet</h2>
       <p>
         Vous pouvez télécharger le fichier Word contenant les configurations
         détaillées du projet VMware :
       </p>
-
       <a href="SoutenancesProjet1 (1).docx" class="btn primary" download>
-        Télécharger le document Word
+        <i class="fas fa-download"></i> Télécharger le document Word
       </a>
-    </section>
+    </div>
 
-    <section>
+    <div class="content-section">
       <h2>Compétences acquises</h2>
-      <ul>
+      <ul class="tech-list">
         <li>Configuration de VMs</li>
         <li>Notions de filtrage</li>
         <li>Tests réseau (ICMP, ports…)</li>
-        <li>Compréhension des règles d'accès</li>
+        <li>Règles d'accès</li>
       </ul>
-    </section>
+    </div>
 
-    <section id="contact">
-      <a href="../index.html" class="btn primary">Retour</a>
-    </section>
+    <div class="back-link">
+      <a href="../index.html" class="btn primary">
+        <i class="fas fa-arrow-left"></i> Retour au portfolio
+      </a>
+    </div>
+
   </body>
 </html>
